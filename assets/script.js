@@ -23,4 +23,19 @@ function initialize() {
     }
 
 }
+//function to pull API by geocodes
+function success(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let queryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=81e1dec4e9f456659bdc2c1245a4e8ed";
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        currentLocation = response.name;
+        saveLoc(response.name);
+        getCurrent(currentLocation);
+    });
+
+}
 
