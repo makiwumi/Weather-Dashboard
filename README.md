@@ -1,5 +1,5 @@
 # Weather-Dashboard
-A dashboard that displays the weather from a API
+A dashboard that displays the weather from an API.
 
 ## API used
     Open weather API
