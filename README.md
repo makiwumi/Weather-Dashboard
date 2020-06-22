@@ -1,6 +1,8 @@
 # Weather-Dashboard
 A dashboard that displays the weather from an API using HTML, CSS, JavaScript and Bootstrap.
 
+Live App https://makiwumi.github.io/Weather-Dashboard/
+
 ## API used
     Open weather API
 
